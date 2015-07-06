@@ -8,7 +8,7 @@ The formula to calculate the weight of the word is to look at the letter positio
 
 As an example:
 
-STEAD balances at T: 1 * S(19) = 1 * E(5) + 2 * A(1) + 3 *
+STEAD balances at T: 1 * S(19) = 1 * E(5) + 2 * A(1) + 3 * D(4)
 ## Input Description
 
 You'll be given a series of English words. Example:
