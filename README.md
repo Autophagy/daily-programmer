@@ -6,4 +6,6 @@ Solutions are formatted as AAA-B where AAA is the challenge number and B is eith
 
 ## Challenges Completed
 
-[Challenge #221 [Intermediate]](https://www.reddit.com/r/dailyprogrammer/comments/3bqq7p/20150701_challenge_221_intermediate_unravelling_a/) // 05/07/2015
+| Number | Difficulty | Name | Date Set | Date Completed |
+|--------|--------------|-----------------------------------------------------------|------------|----------------|
+| 221 | Intermediate | [Unravelling a word snake](https://www.reddit.com/3bqq7p) | 01/07/2015 | 05/07/2015 |
