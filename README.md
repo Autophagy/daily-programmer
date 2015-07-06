@@ -9,3 +9,4 @@ Solutions are formatted as AAA-B where AAA is the challenge number and B is eith
 | Number | Difficulty | Name | Date Set | Date Completed |
 |--------|--------------|-----------------------------------------------------------|------------|----------------|
 | 221 | Intermediate | [Unravelling a word snake](https://www.reddit.com/3bqq7p) | 01/07/2015 | 05/07/2015 |
+| 222 | Easy | [Balancing words](https://www.reddit.com/3c9a9h) | 07/06/2015 | 07/07/2015 |
