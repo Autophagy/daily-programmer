@@ -1,5 +1,5 @@
 def balanceWord(word):
-    for index in range(1, len(word)-2):
+    for index in range(1, len(word)-1):
         left, right = list(word[:index]), list(word[index+1:])
         leftVal, rightVal = 0, 0
         for a, aLetter in enumerate(left):
