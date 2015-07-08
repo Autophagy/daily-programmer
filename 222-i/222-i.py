@@ -1,5 +1,5 @@
 #This is an implementation of the RC4 stream cipher
-#(https://en.wikipedia.org/wiki/RC4)
+#(https://en.wikipedia.org/wiki/RC4#Description)
 
 def RC4(key, data):
     S = range(256)
