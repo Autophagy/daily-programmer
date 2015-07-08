@@ -28,11 +28,11 @@ def PRGA(S, data):
         S[i], S[j] = S[j], S[i]
         K = S[(S[i] + S[j]) % 256]
 
-        output.append(chr(XOR(ord(character),K)))
+        output.append(XOR(character,K))
     return output
 
 def XOR(a,b):
-    return a^b
+    return chr(ord(a)^b)
 
 def encrypt(key, data):
     return ''.join(RC4(str(key), data))
