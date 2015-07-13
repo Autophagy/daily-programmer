@@ -1,12 +1,14 @@
-def garland(word):
+def garlandDegree(word):
     for i in range(1,len(word)):
-        a = word[i:]
-        b = word[:(len(word)-i)]
-        if a == b:
-            return len(a)
+        if word[i:] == word[:len(word)-i]:
+            return len(word[i:])
     return 0
 
-print(garland("programmer"))
-print(garland("ceramic"))
-print(garland("onion"))
-print(garland("alfalfa"))
+def garland(word):
+    degree = garlandDegree(word)
+    print (word + " // " + str(degree) + " // " + word+word[degree:]*4)
+
+garland("programmer")
+garland("ceramic")
+garland("onion")
+garland("alfalfa")
