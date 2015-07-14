@@ -13,7 +13,7 @@ def garlandFile(file, description):
     garland = 0
     with open(file) as file:
         for line in file:
-            a = line.strip()
+            a = line.strip().lower()
             g = garlandDegree(a)
             if(g >garland):
                 result, garland = a, g
