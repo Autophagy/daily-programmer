@@ -8,6 +8,7 @@ Solutions are formatted as AAA-B where AAA is the challenge number and B is eith
 
 | Number | Difficulty | Name | Date Set | Date Completed |
 |--------|--------------|-----------------------------------------------------------|------------|----------------|
+| 223 | Intermediate | [Eel of fortune](https://www.reddit.com/3ddpms) | 15/07/2015 | 17/07/2015
 | 223 | Easy | [Garland words](https://www.reddit.com/3d4fwj) | 13/07/2015 | 13/07/2015
 | 222 | Intermediate | [Simple stream cipher](https://www.reddit.com/3chvxy) | 08/07/2015 | 08/07/2015
 | 222 | Easy | [Balancing words](https://www.reddit.com/3c9a9h) | 06/07/2015 | 07/07/2015 |
