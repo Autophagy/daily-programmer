@@ -1,10 +1,9 @@
 def canBeOffensive(word, insult):
+    wordResult = list(word)
     for c in word:
-        if c == insult[0]:
-            insult = insult[1:]
-        if len(insult) == 0:
-            return True
-    return False
+        if c not in insult:
+            wordResult.remove(c)
+    return insult == ''.join(wordResult)
 
 print(canBeOffensive("synchronized", "snond"))
 print(canBeOffensive("misfunctioned", "snond"))
