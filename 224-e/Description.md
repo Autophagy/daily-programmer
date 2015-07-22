@@ -7,7 +7,8 @@ We've had our fair share of sorting algorithms, now let's do a shuffling challen
 You'll be given a list of values - integers, letters, words - in one order. The input list will be space separated. Example:
 
 ```
-1 2 3 4 5 6 7 8```
+1 2 3 4 5 6 7 8
+```
 
 ## Output Description
 
