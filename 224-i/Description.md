@@ -30,7 +30,8 @@ Example
                                 |    |
                                 |    |
                                 +----+
-                                ```
+```
+
 ## Example Output
 
 For the above diagram your program should find 25 four sided figures.
@@ -66,7 +67,7 @@ Example
               |           |
               |           |
               +-----------+
-              ```
+```
 ## Challenge Output
 
 For the challenge diagram your program should find 25 four sided figures.
