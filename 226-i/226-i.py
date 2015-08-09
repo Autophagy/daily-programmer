@@ -18,7 +18,45 @@ def checkVertical(player, column):
     return ''
 
 def checkDiagonal(player, column, row):
+    rows = len(board.get(column))
+    cols = len(columnRange)
+
+    #Top left to bottom right diagonals
+    b = [(columnRange.index(column),row)]
+    rowIndex,colIndex = row, columnRange.index(column)
+    a = getDiagonal(rowIndex, colIndex, rows, -1, 1, -1)
+    c = getDiagonal(rowIndex, colIndex, -1, cols, -1, 1)
+    a.reverse()
+
+    rowItems = ''.join(expandList([(columnRange[x],y) for x,y in a+b+c]))
+    if player*4 in rowItems:
+        return ' '.join([columnRange[x].upper() + str(y+1) for x,y in a+b+c])
+
+    #top right to bottom left
+    a = getDiagonal(rowIndex, colIndex, rows, cols, 1, 1)
+    c = getDiagonal(rowIndex, colIndex, -1, -1, -1, -1)
+    a.reverse()
+
+    rowItems = ''.join(expandList([(columnRange[x],y) for x,y in a+b+c]))
+    if player*4 in rowItems:
+        return ' '.join([columnRange[x].upper() + str(y+1) for x,y in a+b+c])
+
     return ''
+
+def expandList(coordinates):
+    return [board.get(a)[b] for a,b in coordinates]
+
+def getDiagonal(rowIndex, colIndex, rowBoundary, colBoundary, rowInc, colInc):
+    a = []
+    rowIndex += rowInc
+    colIndex += colInc
+
+    while(rowIndex is not rowBoundary and colIndex is not colBoundary):
+        a.append((colIndex,rowIndex))
+        rowIndex += rowInc
+        colIndex += colInc
+
+    return a
 
 def playMove(player,column):
     col = board.get(column)
@@ -40,25 +78,18 @@ def playMoves(filename):
     with open(filename) as file:
         lines = file.read().splitlines()
 
-    xMoveList = []
-    oMoveList = []
+    for move, line in enumerate(lines):
+        x, o = line.split('  ')
 
-    for line in lines:
-        a, b = line.split('  ')
-        xMoveList.append(a.lower())
-        oMoveList.append(b)
-
-    #Play moves
-    for i in range(0,len(lines)-1):
-        a = playMove('X',xMoveList[i])
+        a = playMove('X',x.lower())
 
         if (a is not ''):
-            return 'X won at move ' + str(i+1) + ' (with ' + a + ')'
+            return 'X won at move ' + str(move+1) + ' (with ' + a + ')'
 
-        a = playMove('O',oMoveList[i])
+        a = playMove('O',o)
 
         if (a is not ''):
-            return 'O won at move ' + str(i+1) + ' (with ' + a + ')'
+            return 'O won at move ' + str(move+1) + ' (with ' + a + ')'
 
     return 'No winner from list of moves: ' + filename
 
