@@ -8,6 +8,7 @@ Solutions are formatted as AAA-B where AAA is the challenge number and B is eith
 
 | Number | Difficulty | Name | Date Set | Date Completed |
 |--------|--------------|-----------------------------------------------------------|------------|----------------|
+| 226 | Intermediate | [Connect Four](https://www.reddit.com/3fva66) | 05/08/2015 | 09/08/2015
 | 226 | Easy | [Adding Fractions](https://www.reddit.com/3fmke1) | 03/08/2015 | 04/08/2015
 | ---------- | ---------- | Was On Holiday | ---------- | ----------
 | 224 | Intermediate | [Detecting four sided figures](https://www.reddit.com/3e5b0o) | 22/07/2015 | 25/07/2015
